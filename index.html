@@ -60,42 +60,71 @@
 
 <!-- HEADER ========================================= -->
 <section id="header">
-    <div class="container">
-        <ul class="bxslider">
-          <li class="slide">
-            <h1>Design The Difference</h1>
-            <p>Design is something <b>unique</b> in our life. it <b>all</b> begins with th spark<br /> Let us be <b>your</b> spark.</p>
-            <a href="#contact-form" class="button-color local-scroll">Here us</a>
-            <a href="#about" class="button-none local-scroll">Learn more</a>
-            <br /><br />
-          </li>
-          <li class="slide">
-            <h1>What we do</h1>
-            <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <a href="#what-we-do" class="button-none local-scroll">Service</a>
-          <br /><br />
-          </li>
-        </ul>
-    </div><!-- end content -->
- 
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/rugby1.jpg" alt="...">
+      <div class="carousel-caption">
+      
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/rugby2.jpg" alt="...">
+      <div class="carousel-caption">
+      
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/rugby3.jpg" alt="...">
+      <div class="carousel-caption">
+      
+      </div>
+    </div>
+  
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
 </section><!-- end section -->
 
 <!--Script Files Links======================================-->
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script> 
 <script type="text/javascript" src="js/main.js"></script> 
-<script type="text/javascript">
-    $(document).ready(function(){
-    $('.bxslider').bxSlider({
-      auto: true,
-      infiniteLoop: true,
-      mode: 'horizontal',
-      speed: 1200,
-      pause: 10000
-    });
-});
+
+<script>
+  $(window).load(function(){
+  $(window).resize(function(){
+     var height =$(window).height();
+     $('.carousel').height(height);
+     $('.carousel .item').height(height);
+     $('.carousel-inner > .item > img').height(height);
+     $('.carousel-control').height(height);
+     })
+
+  $(window).resize(); //on page load
+  });
 </script>
+
 
 </body>
 </html>
