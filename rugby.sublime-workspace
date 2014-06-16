@@ -1,0 +1,411 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"a",
+				"a	Tag"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"test",
+				"test_detail"
+			],
+			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"min",
+				"min-width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"bs3ta",
+				"Snippet: bs3-table"
+			],
+			[
+				"bs3m",
+				"Snippet: bs3-media-object"
+			],
+			[
+				"bsme",
+				"Snippet: bs3-media-object"
+			],
+			[
+				"bs3me",
+				"Snippet: bs3-media-object"
+			],
+			[
+				"bsta",
+				"Snippet: bs3-table-striped"
+			],
+			[
+				"bs3",
+				"Snippet: bs3-container"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"set sass",
+				"Set Syntax: SCSS"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"set css",
+				"Set Syntax: CSS"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"i",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 498.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/zaeshta/sass/_analytics.scss",
+		"/C/xampp/htdocs/zaeshta/analytics.html",
+		"/C/xampp/htdocs/zaeshta/tour.html",
+		"/C/xampp/htdocs/zaeshta/templates.html",
+		"/C/xampp/htdocs/zaeshta/template-preview2.html",
+		"/C/Users/hp/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/xampp/htdocs/zaeshta/template-preview.html",
+		"/C/xampp/htdocs/zaeshta/pricing.html",
+		"/C/xampp/htdocs/zaeshta/customize-template.html",
+		"/C/xampp/htdocs/zaeshta/blog.html",
+		"/C/xampp/htdocs/zaeshta/about.html",
+		"/C/xampp/htdocs/zaeshta/index.html",
+		"/C/xampp/htdocs/zaeshta/features.html",
+		"/C/xampp/htdocs/zaeshta/sass/_home-head1.scss",
+		"/C/xampp/htdocs/zaeshta/sass/_blog.scss",
+		"/C/xampp/htdocs/zaeshta/js/main.js",
+		"/C/xampp/htdocs/resort/try.html",
+		"/C/xampp/htdocs/zaeshta/faq.html",
+		"/C/xampp/htdocs/zaeshta/sass/_faq.scss",
+		"/C/xampp/htdocs/zaeshta/account.html",
+		"/C/xampp/htdocs/zaeshta/sass/_account.scss",
+		"/C/xampp/htdocs/zaeshta/sass/_feature.scss",
+		"/C/xampp/htdocs/zaeshta/sass/main.scss",
+		"/C/xampp/htdocs/skillhippo/css/main.css",
+		"/C/xampp/htdocs/skillhippo Final/sass/_editprofile.scss",
+		"/C/xampp/htdocs/skillhippo/sass/_editprofile.scss",
+		"/C/xampp/htdocs/zaeshta/sass/_home2.scss",
+		"/C/xampp/htdocs/skillhippo/sass/_classes.scss",
+		"/C/xampp/htdocs/zaeshta/stylesheets/main.css",
+		"/C/xampp/htdocs/zaeshta/sass/analytics.scss",
+		"/C/xampp/htdocs/zaeshta/css/main.css",
+		"/C/xampp/htdocs/rahul/sass/_home2.scss",
+		"/C/xampp/htdocs/rahul/index.html",
+		"/C/xampp/htdocs/rahul/sass/main.scss",
+		"/C/Users/hp/Desktop/main.scss",
+		"/C/xampp/htdocs/rahul/js/main.js",
+		"/C/xampp/htdocs/voice of himachal/.htaccess",
+		"/C/xampp/htdocs/voice of himachal/demo.html",
+		"/C/xampp/htdocs/voice of himachal/sass/_single-post.scss",
+		"/C/xampp/htdocs/voice of himachal/single-post.html",
+		"/C/xampp/htdocs/voice of himachal/index.html",
+		"/C/xampp/htdocs/voice of himachal/our-civilization.html",
+		"/C/xampp/htdocs/voice of himachal/login.html",
+		"/C/xampp/htdocs/Skill-site/frontend/www/themes/front-end/js/gmap3.js",
+		"/C/xampp/htdocs/voice of himachal/monika.php",
+		"/C/xampp/htdocs/voice of himachal/sass/_home.scss",
+		"/C/xampp/htdocs/voice of himachal/sass/main.scss",
+		"/C/xampp/htdocs/voice of himachal/sass/_civilization.scss",
+		"/C/xampp/htdocs/voice of himachal/sass/_login.scss"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"id=\"test-display\"",
+			"password",
+			"form",
+			"id=\"test-display\"",
+			"123px;",
+			"127px;",
+			"<figure><img alt=\"\" class=\"img-responsive\" src=\"img/f2.png\"/></figure>",
+			"features",
+			"teati",
+			"Detail",
+			"Deta",
+			"deta",
+			"mobile-tab",
+			"option",
+			"left-se",
+			"panel-group",
+			"styles",
+			"panel-group",
+			"style-tab",
+			"styles",
+			"style",
+			"hello",
+			"id=\"test-display\"",
+			"test-detail",
+			"test-display",
+			"test-",
+			"publish",
+			"media-body",
+			"col-sm-7",
+			"col-sm-5",
+			"profile",
+			"faq",
+			"my",
+			"}\n",
+			"faq",
+			"table",
+			"tabs",
+			"tabd",
+			"span",
+			"sapn",
+			"publish",
+			"background",
+			"site",
+			"profile",
+			"header",
+			" in",
+			"One",
+			"#2fdcfc",
+			"sm",
+			"%;\n",
+			"setting-wra",
+			"setting-wrap",
+			"setting",
+			"right-se",
+			"mobile",
+			"choice",
+			"header",
+			"password",
+			"nav-tabs",
+			"textarea",
+			"teaxarea",
+			"				\n",
+			"password-tab",
+			"change",
+			"setting-pannel",
+			"setting",
+			"im",
+			"ul",
+			"check",
+			"href=\"#\"",
+			"career",
+			"tab-c",
+			"top",
+			"right",
+			"div",
+			"pad_rl",
+			"td",
+			"tab",
+			"start",
+			"table",
+			"nav-tab",
+			"nav",
+			"<p>",
+			"p",
+			"png",
+			";\n",
+			"light-black",
+			"light",
+			"tabs",
+			"pricing",
+			"inner",
+			"faq",
+			"detail",
+			"class=\"col-lg-4\"",
+			"jQuery",
+			"display",
+			"col-xs-4",
+			"p",
+			"col-lg-1 col-md-1 col-sm-1 col-xs-1",
+			"li",
+			"alt=\"\"",
+			"padding",
+			"src=\"\"",
+			"reply",
+			"leave",
+			"comment-te",
+			"info",
+			"maps",
+			"google",
+			"pad",
+			"item-",
+			"item",
+			"my-profile",
+			"review-control1",
+			"basket-r",
+			"target",
+			"order-summery",
+			"order",
+			"pad",
+			"35%",
+			"4",
+			"border"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 96.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"demo",
+				"demo.html"
+			],
+			[
+				".htacc",
+				".htaccess"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/xampp/htdocs/voice of himachal/voice.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 262.0,
+	"status_bar_visible": true
+}
