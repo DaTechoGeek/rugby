@@ -149,6 +149,30 @@ div.title {
     margin: 0 auto;
     position: relative;
 }
+
+.title h2:after { 
+	width: 300px;
+    content: " ";
+	background-image:url(../images/after_line.png);
+	background-repeat: no-repeat;
+	background-position: left;
+    position: absolute;
+    right: -11.5em;
+    top: 0.2em;
+    height:20px;
+}
+.title h2:before { 
+	width: 300px;
+    content: " ";
+	background-image:url(../images/before_line.png);
+	background-repeat: no-repeat;
+	background-position: left;
+    position: absolute;
+    left: -11.5em;
+    top: 0.2em;
+    height:20px;
+}
+
 .blog { padding: 0 0 53px 0; }
 #blog .content { width: 80%; }
 .blog .section-text { margin: 33px 0 61px 0; }
@@ -244,28 +268,6 @@ div.title {
 	cursor: pointer;
 }
 
-.blog h2:after { 
-	width: 300px;
-    content: " ";
-	background-image:url(../images/after_line.png);
-	background-repeat: no-repeat;
-	background-position: left;
-    position: absolute;
-    right: -11.5em;
-    top: 0.2em;
-    height:20px;
-}
-.blog h2:before { 
-	width: 300px;
-    content: " ";
-	background-image:url(../images/before_line.png);
-	background-repeat: no-repeat;
-	background-position: left;
-    position: absolute;
-    left: -11.5em;
-    top: 0.2em;
-    height:20px;
-}
 
 .black-button { 
 	background: #332d26; 
@@ -314,4 +316,10 @@ ul.pagination li.active a:hover { background: #f5503b; }
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	.blog-posts .content-blog p { display: none; }	
+}
+
+/*=======================NEWSLETTER=====================*/
+
+.newsletter{
+	text-align:center;
 }
