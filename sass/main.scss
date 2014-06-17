@@ -2,9 +2,24 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 
+@font-face {
+    font-family: 'capture_itregular';
+    src: url('../fonts/Capture_it-webfont.eot');
+    src: url('../fonts/Capture_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Capture_it-webfont.woff') format('woff'),
+         url('../fonts/Capture_it-webfont.ttf') format('truetype'),
+         url('../fonts/Capture_it-webfont.svg#capture_itregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* ======================================================================================
     GENERAL STYLE
 ========================================================================================*/
+$white : #ffffff;
+$orange : #f5503b;
+$capture : 'capture_itregular';
 body {
     font-family: 'Open Sans', sans-serif;
 	/*font-family: 'Roboto', sans-serif;*/
@@ -16,7 +31,7 @@ body {
 
 .container { position: relative; z-index: 1;}
 img { border: 0; }
-h1, h2, h3, h4, h5 { font-family: 'Roboto', sans-serif; text-transform: uppercase; margin: 0; padding: 0; }
+h1, h2, h3, h4, h5 { font-family: $capture,'Roboto', sans-serif; text-transform: uppercase; margin: 0; padding: 0; }
 h2 { font-size: 2em; margin-bottom: 2px;}
 h3 { font-size: 1.5em; }
 h4 { font-size: 1.2em; }
@@ -24,14 +39,14 @@ h5 { font-size: 1em; text-transform: none; }
 ul { list-style-type: none; }
 p { margin: 20px 0; font-size: 120%; font-weight: 300;}
 
-.our_color { color: #f5503b; }
+.our_color { color: $orange; }
 .inner-title { font-family: 'Open Sans', sans-serif; font-size: 1.5em; font-weight: 300; }
 #separate { margin-top: 70px;}
 
 section { padding-top: 98px; }
 
 /*link*/
-a { outline: none; color: #f5503b; }
+a { outline: none; color: $orange; }
 a:hover { text-decoration: none; color: #f5503b }
 
 /*form*/
@@ -60,8 +75,8 @@ form input, textarea, submit, button { outline: none; }
 	margin: 0 0 40px 0;
 }
 
-#header a { color: #fff; }
-#header a:hover { color: #fff; }
+#header a { color: $white }
+#header a:hover { color: $white }
 #header a:hover.button-none { color: #332d26;}
 
 
@@ -92,12 +107,12 @@ form input, textarea, submit, button { outline: none; }
 	height: 70px;
 	padding: 10px 0px;
 	margin: 0;
-	color: #FFF;
+	color: $white;
 }
 
 .navbar-default .navbar-nav > li > a { 
 	height: 60px; 
-	color: #fff; 
+	color: $white; 
 	text-transform: uppercase; 
 	font-size: 14px;
 	-webkit-transition: 0.3s; /* For Safari 3.1 to 6.0 */
@@ -106,9 +121,9 @@ form input, textarea, submit, button { outline: none; }
 }
 
 .navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {color: #f5503b; border-bottom: 2px solid #f5503b;}
+.navbar-default .navbar-nav > li > a:focus {color: $orange; border-bottom: 2px solid $orange;}
 
-.navbar-default .navbar-nav > li.currentClass a { color: #f5503b; border-bottom: 2px solid #f5503b; }
+.navbar-default .navbar-nav > li.currentClass a { color: $orange; border-bottom: 2px solid $orange; }
 
 
 /* Large desktop */
@@ -173,7 +188,7 @@ div.title {
 
 
 .blog-posts .hover-background { 
-	background: #f5503b; 
+	background: $orange; 
 	width: 100%; 
 	height: 100%;
 	position: absolute;
@@ -280,14 +295,14 @@ ul.pagination li a {
 	background: #332d26; 
 	border: 0px; 
 	margin: 5px 5px; 
-	color: #fff; 
+	color: $white; 
 	-webkit-transition: 0.5s; 
 	transition: 0.5s;
 	font-size: 1.2em;
 }
-ul.pagination li a:hover { background: #f5503b; color: #fff; }
-ul.pagination li.active a { background: #f5503b; border: none; }
-ul.pagination li.active a:hover { background: #f5503b; }
+ul.pagination li a:hover { background: $orange; color: $white; }
+ul.pagination li.active a { background: $orange; border: none; }
+ul.pagination li.active a:hover { background: $orange; }
 
 /*---------------------BLOG SECTION RESPONSIVE --------------------*/
 /* Large desktop */
