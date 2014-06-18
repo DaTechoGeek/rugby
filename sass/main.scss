@@ -489,8 +489,13 @@ footer input[type="submit"]{
 	border-radius: 3px;
 	width: 100%;
 	-webkit-font-smoothing: antialiased;
-	font-size: 1.1em;
+	font-size: 14px;
 	font-weight: 600;
+	&:hover{
+		background-color:$white;
+		color:$orange;
+		border-color: $white;
+	}
 }
 
 /* Address */
@@ -515,4 +520,48 @@ footer .address div .fa{
 
 footer .address div p{
 	margin-top: 0;
+}
+
+/* *********************************************************
+	Copyright Styles
+********************************************************* */
+
+.copyright{
+	margin-bottom: 10px;
+	margin: 10px 0;
+	p{
+		text-align: left;
+		margin: 0;
+	}
+
+	a{
+		color:$orange;
+		&:hover{
+			color:$brown;
+		}
+	}
+}
+
+.copyright .social-icons ul{
+    float: right;
+	margin: 0;
+    li{
+    	float:left;
+    }
+}
+
+.copyright .social-icons i{
+	color: #fff;
+	background-color: $orange;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+	margin: 0 10px;
+	border-radius: 50%;
+
+	&:hover{
+		background-color: $brown;
+	}
 }

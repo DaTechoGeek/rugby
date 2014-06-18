@@ -695,24 +695,30 @@ footer input[type="submit"] {
   border-radius: 3px;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  font-size: 1.1em;
+  font-size: 14px;
   font-weight: 600;
+}
+/* line 494, ../sass/main.scss */
+footer input[type="submit"]:hover {
+  background-color: white;
+  color: #f5503b;
+  border-color: white;
 }
 
 /* Address */
-/* line 498, ../sass/main.scss */
+/* line 503, ../sass/main.scss */
 footer .address {
   color: #fff;
   text-align: left;
 }
 
-/* line 503, ../sass/main.scss */
+/* line 508, ../sass/main.scss */
 footer .address div {
   padding-left: 30px;
   position: relative;
 }
 
-/* line 508, ../sass/main.scss */
+/* line 513, ../sass/main.scss */
 footer .address div .fa {
   position: absolute;
   left: 0;
@@ -720,7 +726,56 @@ footer .address div .fa {
   font-size: 1.4em;
 }
 
-/* line 516, ../sass/main.scss */
+/* line 521, ../sass/main.scss */
 footer .address div p {
   margin-top: 0;
+}
+
+/* *********************************************************
+	Copyright Styles
+********************************************************* */
+/* line 529, ../sass/main.scss */
+.copyright {
+  margin-bottom: 10px;
+  margin: 10px 0;
+}
+/* line 532, ../sass/main.scss */
+.copyright p {
+  text-align: left;
+  margin: 0;
+}
+/* line 537, ../sass/main.scss */
+.copyright a {
+  color: #f5503b;
+}
+/* line 539, ../sass/main.scss */
+.copyright a:hover {
+  color: #332d26;
+}
+
+/* line 545, ../sass/main.scss */
+.copyright .social-icons ul {
+  float: right;
+  margin: 0;
+}
+/* line 548, ../sass/main.scss */
+.copyright .social-icons ul li {
+  float: left;
+}
+
+/* line 553, ../sass/main.scss */
+.copyright .social-icons i {
+  color: #fff;
+  background-color: #f5503b;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+/* line 564, ../sass/main.scss */
+.copyright .social-icons i:hover {
+  background-color: #332d26;
 }
