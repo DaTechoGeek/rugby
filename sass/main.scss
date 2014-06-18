@@ -19,14 +19,16 @@
 ========================================================================================*/
 $white : #ffffff;
 $orange : #f5503b;
+$brown:#332d26;
 $capture : 'capture_itregular';
+$vblack:#333333;
 body {
     font-family: 'Open Sans', sans-serif;
-	/*font-family: 'Roboto', sans-serif;*/
 	font-weight: 400;
 	text-align: center;
 	margin: 0;
 	padding: 0;
+	color:$vblack;
 }
 
 .container { position: relative; z-index: 1;}
@@ -51,6 +53,20 @@ a:hover { text-decoration: none; color: #f5503b }
 
 /*form*/
 form input, textarea, submit, button { outline: none; }
+
+ @mixin button($bgr:$orange,$tcolor:$white,$hbgr:$brown,$htcolor:$white){
+        padding: 4px 10px;
+        background-color: $bgr;
+        border:none;
+        border-radius: 0;
+        color:$tcolor;
+        text-transform: uppercase;
+        &:hover{
+            color:$htcolor;
+            background-color: $hbgr;
+        }
+    }
+
 
 /* ======================================================================================
 	SLIDER STYLE 
@@ -164,6 +180,30 @@ div.title {
     margin: 0 auto;
     position: relative;
 }
+
+.title h2:after { 
+	width: 300px;
+    content: " ";
+	background-image:url(../images/after_line.png);
+	background-repeat: no-repeat;
+	background-position: left;
+    position: absolute;
+    right: -11.5em;
+    top: 0.2em;
+    height:20px;
+}
+.title h2:before { 
+	width: 300px;
+    content: " ";
+	background-image:url(../images/before_line.png);
+	background-repeat: no-repeat;
+	background-position: left;
+    position: absolute;
+    left: -11.5em;
+    top: 0.2em;
+    height:20px;
+}
+
 .blog { padding: 0 0 53px 0; }
 #blog .content { width: 80%; }
 .blog .section-text { margin: 33px 0 61px 0; }
@@ -259,28 +299,6 @@ div.title {
 	cursor: pointer;
 }
 
-.blog h2:after { 
-	width: 300px;
-    content: " ";
-	background-image:url(../images/after_line.png);
-	background-repeat: no-repeat;
-	background-position: left;
-    position: absolute;
-    right: -11.5em;
-    top: 0.2em;
-    height:20px;
-}
-.blog h2:before { 
-	width: 300px;
-    content: " ";
-	background-image:url(../images/before_line.png);
-	background-repeat: no-repeat;
-	background-position: left;
-    position: absolute;
-    left: -11.5em;
-    top: 0.2em;
-    height:20px;
-}
 
 .black-button { 
 	background: #332d26; 
@@ -313,20 +331,188 @@ ul.pagination li.active a:hover { background: $orange; }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 	#blog .content { width: 100%; }
-	.blog h2:before { width: 0px; }
-	.blog h2:after { width: 0px; }
+	.title h2:before { width: 0px; }
+	.title h2:after { width: 0px; }
 	.blog-posts .content-blog p { margin: 15px 50px;}
 }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 	#blog .content { width: 100%; }
-	.blog h2:before { width: 0px; }
-	.blog h2:after { width: 0px; }
+	.title h2:before { width: 0px; }
+	.title h2:after { width: 0px; }
 	.blog-posts .content-blog p { margin: 10px 30px; font-size: 0.9em;}
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	.blog-posts .content-blog p { display: none; }	
+}
+
+/*=======================NEWSLETTER=====================*/
+
+.newsletter{
+	text-align:center;
+	padding: 40px 0;
+	background:#f2f2f2;
+
+	.suscribe-form{
+		margin: 30px 0 0;
+
+		.input-control{
+			padding-right: 0px;
+		}
+
+		.form-control{
+			height:37px;
+			box-shadow:none;
+			&:focus{
+				border-color:$orange;
+			}
+		}
+	input[type="submit"]{
+		@include button();
+		padding: 9px 40px;
+	}
+	}
+}
+/*=======================MAP==================*/
+.map{
+	height: 250px;
+	overflow: hidden;
+}
+
+.map iframe{
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+/*=======================FOOTER============*/
+footer{
+	padding: 50px 0;
+	background:$vblack;
+	color:$white !important;
+	.title-margin{
+		margin:20px 0px;
+	}
+
+	.title {
+		h2{
+			color:white;
+		}
+	}
+	.title h2:after { 
+	width: 300px;
+    content: " ";
+	background-image:url(../img/footer_after_line.png);
+	background-repeat: no-repeat;
+	background-position: left;
+    position: absolute;
+    right: -11.5em;
+    top: 0.2em;
+    height:20px;
+}
+.title h2:before { 
+	width: 300px;
+    content: " ";
+	background-image:url(../img/footer_before_line.png);
+	background-repeat: no-repeat;
+	background-position: left;
+    position: absolute;
+    left: -11.5em;
+    top: 0.2em;
+    height:20px;
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	
+	.title h2:before { width: 0px; }
+	.title h2:after { width: 0px; }
+	
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	
+	.title h2:before { width: 0px; }
+	.title h2:after { width: 0px; }
+	
+}
+
+}
+
+footer a{
+	color: #fff;
+	&:hover{
+		color: $orange; 
+	}
+}
+
+footer input,textarea{
+	padding: 8px 14px;
+	border: 2px solid rgba(255, 255, 255, 0.19);
+	width: 100%;
+	background-color: transparent;
+	resize: none;
+	margin: 5px 0;
+	-webkit-font-smoothing: antialiased;
+	color: #fff;
+}
+
+input:focus,textarea:focus{ 
+    outline: none; 
+    box-shadow: none; 
+    border-color:$orange; 
+}
+
+footer input[type='submit'],
+footer input[type='checkbox']{
+    width: inherit;
+}
+
+footer form .input-control{ 
+    position: relative; 
+}
+
+footer form .input-control .fa{
+	position: absolute;
+	right: 10px;
+	top: 15px;
+	font-size: 1.2em;
+	color: rgba(255, 255, 255, 0.27);
+}
+
+footer input[type="submit"]{
+	color: #fff;
+	background-color: $orange;
+	border-color: $orange;
+	border-radius: 3px;
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+/* Address */
+
+footer .address{
+	color: #fff;
+	text-align: left;
+}
+
+footer .address div{
+	padding-left: 30px;
+	position: relative;
+}
+
+footer .address div .fa{
+	position: absolute;
+	left: 0;
+	top:5px;
+	font-size: 1.4em;
+}
+
+
+footer .address div p{
+	margin-top: 0;
 }

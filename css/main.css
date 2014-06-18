@@ -1,0 +1,726 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+/* Import fonts */
+@font-face {
+  font-family: 'capture_itregular';
+  src: url("../fonts/Capture_it-webfont.eot");
+  src: url("../fonts/Capture_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Capture_it-webfont.woff") format("woff"), url("../fonts/Capture_it-webfont.ttf") format("truetype"), url("../fonts/Capture_it-webfont.svg#capture_itregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ======================================================================================
+    GENERAL STYLE
+========================================================================================*/
+/* line 25, ../sass/main.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+}
+
+/* line 34, ../sass/main.scss */
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 35, ../sass/main.scss */
+img {
+  border: 0;
+}
+
+/* line 36, ../sass/main.scss */
+h1, h2, h3, h4, h5 {
+  font-family: "capture_itregular", "Roboto", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 37, ../sass/main.scss */
+h2 {
+  font-size: 2em;
+  margin-bottom: 2px;
+}
+
+/* line 38, ../sass/main.scss */
+h3 {
+  font-size: 1.5em;
+}
+
+/* line 39, ../sass/main.scss */
+h4 {
+  font-size: 1.2em;
+}
+
+/* line 40, ../sass/main.scss */
+h5 {
+  font-size: 1em;
+  text-transform: none;
+}
+
+/* line 41, ../sass/main.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 42, ../sass/main.scss */
+p {
+  margin: 20px 0;
+  font-size: 120%;
+  font-weight: 300;
+}
+
+/* line 44, ../sass/main.scss */
+.our_color {
+  color: #f5503b;
+}
+
+/* line 45, ../sass/main.scss */
+.inner-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+/* line 46, ../sass/main.scss */
+#separate {
+  margin-top: 70px;
+}
+
+/* line 48, ../sass/main.scss */
+section {
+  padding-top: 98px;
+}
+
+/*link*/
+/* line 51, ../sass/main.scss */
+a {
+  outline: none;
+  color: #f5503b;
+}
+
+/* line 52, ../sass/main.scss */
+a:hover {
+  text-decoration: none;
+  color: #f5503b;
+}
+
+/*form*/
+/* line 55, ../sass/main.scss */
+form input, textarea, submit, button {
+  outline: none;
+}
+
+/* ======================================================================================
+	SLIDER STYLE 
+========================================================================================*/
+/* line 74, ../sass/main.scss */
+#header {
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  height: 640px;
+  position: relative;
+  padding: 0;
+}
+
+/* line 84, ../sass/main.scss */
+#header h1 {
+  font-size: 2.45em;
+  margin-bottom: 30px;
+}
+
+/* line 85, ../sass/main.scss */
+#header h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* line 87, ../sass/main.scss */
+#header p {
+  font-weight: 100;
+  font-size: 1.125em;
+  line-height: 1.5em;
+  margin: 0 0 40px 0;
+}
+
+/* line 94, ../sass/main.scss */
+#header a {
+  color: white;
+}
+
+/* line 95, ../sass/main.scss */
+#header a:hover {
+  color: white;
+}
+
+/* line 96, ../sass/main.scss */
+#header a:hover.button-none {
+  color: #332d26;
+}
+
+/* line 100, ../sass/main.scss */
+#header .carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/* ======================================================================================
+	NAVIGATION STYLE 
+========================================================================================*/
+/* line 112, ../sass/main.scss */
+.navbar {
+  background: none;
+  filter: none;
+  border: none;
+  box-shadow: none;
+  background-color: #332d26;
+  height: 70px;
+  color: none;
+}
+
+/* line 121, ../sass/main.scss */
+.navbar .navbar-header {
+  height: 70px;
+  padding: 10px 0px;
+}
+
+/* line 122, ../sass/main.scss */
+.navbar ul li {
+  height: 70px;
+  padding: 10px 0px;
+  margin: 0;
+  color: white;
+}
+
+/* line 129, ../sass/main.scss */
+.navbar-default .navbar-nav > li > a {
+  height: 60px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  -webkit-transition: 0.3s;
+  /* For Safari 3.1 to 6.0 */
+  transition: 0.3s;
+  outline: none;
+}
+
+/* line 140, ../sass/main.scss */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f5503b;
+  border-bottom: 2px solid #f5503b;
+}
+
+/* line 142, ../sass/main.scss */
+.navbar-default .navbar-nav > li.currentClass a {
+  color: #f5503b;
+  border-bottom: 2px solid #f5503b;
+}
+
+/* Large desktop */
+/* Portrait tablet to landscape and desktop */
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  /* line 157, ../sass/main.scss */
+  .navbar-collapse {
+    margin: 0px;
+    background: #332d26;
+    padding: 5px 30px;
+    border: none;
+  }
+
+  /* line 163, ../sass/main.scss */
+  .navbar ul li {
+    padding: 5px;
+    height: 40px;
+  }
+
+  /* line 164, ../sass/main.scss */
+  .navbar-default .navbar-nav > li > a {
+    height: 40px;
+  }
+
+  /* line 165, ../sass/main.scss */
+  .navbar-default .navbar-nav > li > a:hover {
+    border: none;
+    background: #46413b;
+  }
+}
+/* Landscape phones and down */
+/* line 173, ../sass/main.scss */
+.servicesslider {
+  background: red;
+  width: 100%;
+}
+
+/* ======================================================================================
+	BLOG STYLE
+========================================================================================*/
+/* line 178, ../sass/main.scss */
+div.title {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 184, ../sass/main.scss */
+.title h2:after {
+  width: 300px;
+  content: " ";
+  background-image: url(../images/after_line.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  position: absolute;
+  right: -11.5em;
+  top: 0.2em;
+  height: 20px;
+}
+
+/* line 195, ../sass/main.scss */
+.title h2:before {
+  width: 300px;
+  content: " ";
+  background-image: url(../images/before_line.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  position: absolute;
+  left: -11.5em;
+  top: 0.2em;
+  height: 20px;
+}
+
+/* line 207, ../sass/main.scss */
+.blog {
+  padding: 0 0 53px 0;
+}
+
+/* line 208, ../sass/main.scss */
+#blog .content {
+  width: 80%;
+}
+
+/* line 209, ../sass/main.scss */
+.blog .section-text {
+  margin: 33px 0 61px 0;
+}
+
+/* line 211, ../sass/main.scss */
+.blog-posts {
+  float: left;
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  overflow: hidden;
+  border: 1px solid #332d26;
+  margin-bottom: 36px;
+}
+
+/* line 222, ../sass/main.scss */
+.blog-post-content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 227, ../sass/main.scss */
+.blog-posts .image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 230, ../sass/main.scss */
+.blog-posts .hover-background {
+  background: #f5503b;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  overflow: hidden;
+  color: white;
+  opacity: 0.9;
+}
+
+/* line 242, ../sass/main.scss */
+.blog-posts .content-blog {
+  text-align: center;
+  color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+}
+
+/* line 252, ../sass/main.scss */
+.blog-posts .content-blog h3 {
+  margin-top: 41px;
+}
+
+/* line 253, ../sass/main.scss */
+.blog-posts .blog-data {
+  font-size: 1em;
+  margin-top: 5px;
+  font-weight: 200px;
+}
+
+/* line 254, ../sass/main.scss */
+.blog-posts .content-blog p {
+  font-family: "Open sans", sans-serif;
+  margin: 15px 100px;
+  font-weight: 400px;
+}
+
+/* line 256, ../sass/main.scss */
+.blog-posts .look {
+  width: 40px;
+  height: 40px;
+  background: black;
+  background-image: url(../images/search.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+/* line 271, ../sass/main.scss */
+.blog-posts .read-more {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 41.5px;
+  background: #332d26;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+/* line 287, ../sass/main.scss */
+.blog-posts .video {
+  width: 40px;
+  height: 40px;
+  background: black;
+  background-image: url(../images/video.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+/* line 303, ../sass/main.scss */
+.black-button {
+  background: #332d26;
+  height: 40px;
+  width: 200px;
+  overflow: hidden;
+  margin: 150px auto 0 auto;
+  font-size: 0.95em;
+  font-weight: 400px;
+}
+
+/* line 312, ../sass/main.scss */
+ul.pagination li a {
+  background: #332d26;
+  border: 0px;
+  margin: 5px 5px;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 1.2em;
+}
+
+/* line 321, ../sass/main.scss */
+ul.pagination li a:hover {
+  background: #f5503b;
+  color: white;
+}
+
+/* line 322, ../sass/main.scss */
+ul.pagination li.active a {
+  background: #f5503b;
+  border: none;
+}
+
+/* line 323, ../sass/main.scss */
+ul.pagination li.active a:hover {
+  background: #f5503b;
+}
+
+/*---------------------BLOG SECTION RESPONSIVE --------------------*/
+/* Large desktop */
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 333, ../sass/main.scss */
+  #blog .content {
+    width: 100%;
+  }
+
+  /* line 334, ../sass/main.scss */
+  .title h2:before {
+    width: 0px;
+  }
+
+  /* line 335, ../sass/main.scss */
+  .title h2:after {
+    width: 0px;
+  }
+
+  /* line 336, ../sass/main.scss */
+  .blog-posts .content-blog p {
+    margin: 15px 50px;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  /* line 341, ../sass/main.scss */
+  #blog .content {
+    width: 100%;
+  }
+
+  /* line 342, ../sass/main.scss */
+  .title h2:before {
+    width: 0px;
+  }
+
+  /* line 343, ../sass/main.scss */
+  .title h2:after {
+    width: 0px;
+  }
+
+  /* line 344, ../sass/main.scss */
+  .blog-posts .content-blog p {
+    margin: 10px 30px;
+    font-size: 0.9em;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 349, ../sass/main.scss */
+  .blog-posts .content-blog p {
+    display: none;
+  }
+}
+/*=======================NEWSLETTER=====================*/
+/* line 354, ../sass/main.scss */
+.newsletter {
+  text-align: center;
+  padding: 40px 0;
+  background: #f2f2f2;
+}
+/* line 359, ../sass/main.scss */
+.newsletter .suscribe-form {
+  margin: 30px 0 0;
+}
+/* line 362, ../sass/main.scss */
+.newsletter .suscribe-form .input-control {
+  padding-right: 0px;
+}
+/* line 366, ../sass/main.scss */
+.newsletter .suscribe-form .form-control {
+  height: 37px;
+  box-shadow: none;
+}
+/* line 369, ../sass/main.scss */
+.newsletter .suscribe-form .form-control:focus {
+  border-color: #f5503b;
+}
+/* line 373, ../sass/main.scss */
+.newsletter .suscribe-form input[type="submit"] {
+  padding: 4px 10px;
+  background-color: #f5503b;
+  border: none;
+  border-radius: 0;
+  color: white;
+  text-transform: uppercase;
+  padding: 9px 40px;
+}
+/* line 64, ../sass/main.scss */
+.newsletter .suscribe-form input[type="submit"]:hover {
+  color: white;
+  background-color: #332d26;
+}
+
+/*=======================MAP==================*/
+/* line 380, ../sass/main.scss */
+.map {
+  height: 250px;
+  overflow: hidden;
+}
+
+/* line 385, ../sass/main.scss */
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/*=======================FOOTER============*/
+/* line 391, ../sass/main.scss */
+footer {
+  padding: 50px 0;
+  background: #333333;
+  color: white !important;
+  /* Portrait tablet to landscape and desktop */
+  /* Landscape phone to portrait tablet */
+}
+/* line 395, ../sass/main.scss */
+footer .title-margin {
+  margin: 20px 0px;
+}
+/* line 400, ../sass/main.scss */
+footer .title h2 {
+  color: white;
+}
+/* line 404, ../sass/main.scss */
+footer .title h2:after {
+  width: 300px;
+  content: " ";
+  background-image: url(../img/footer_after_line.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  position: absolute;
+  right: -11.5em;
+  top: 0.2em;
+  height: 20px;
+}
+/* line 415, ../sass/main.scss */
+footer .title h2:before {
+  width: 300px;
+  content: " ";
+  background-image: url(../img/footer_before_line.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  position: absolute;
+  left: -11.5em;
+  top: 0.2em;
+  height: 20px;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 429, ../sass/main.scss */
+  footer .title h2:before {
+    width: 0px;
+  }
+  /* line 430, ../sass/main.scss */
+  footer .title h2:after {
+    width: 0px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 437, ../sass/main.scss */
+  footer .title h2:before {
+    width: 0px;
+  }
+  /* line 438, ../sass/main.scss */
+  footer .title h2:after {
+    width: 0px;
+  }
+}
+
+/* line 444, ../sass/main.scss */
+footer a {
+  color: #fff;
+}
+/* line 446, ../sass/main.scss */
+footer a:hover {
+  color: #f5503b;
+}
+
+/* line 451, ../sass/main.scss */
+footer input, textarea {
+  padding: 8px 14px;
+  border: 2px solid rgba(255, 255, 255, 0.19);
+  width: 100%;
+  background-color: transparent;
+  resize: none;
+  margin: 5px 0;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+}
+
+/* line 462, ../sass/main.scss */
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #f5503b;
+}
+
+/* line 469, ../sass/main.scss */
+footer input[type='submit'],
+footer input[type='checkbox'] {
+  width: inherit;
+}
+
+/* line 473, ../sass/main.scss */
+footer form .input-control {
+  position: relative;
+}
+
+/* line 477, ../sass/main.scss */
+footer form .input-control .fa {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.27);
+}
+
+/* line 485, ../sass/main.scss */
+footer input[type="submit"] {
+  color: #fff;
+  background-color: #f5503b;
+  border-color: #f5503b;
+  border-radius: 3px;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+/* Address */
+/* line 498, ../sass/main.scss */
+footer .address {
+  color: #fff;
+  text-align: left;
+}
+
+/* line 503, ../sass/main.scss */
+footer .address div {
+  padding-left: 30px;
+  position: relative;
+}
+
+/* line 508, ../sass/main.scss */
+footer .address div .fa {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-size: 1.4em;
+}
+
+/* line 516, ../sass/main.scss */
+footer .address div p {
+  margin-top: 0;
+}
